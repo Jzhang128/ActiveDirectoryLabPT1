@@ -14,31 +14,27 @@ This lab consists of the introduction of a simple PowerShell script that walks t
 1. Open Virtualbox and create the server 2019 Virtual machine first by pressing “new”. 
 Input name as “DC” and select “other windows(64-bit)” for version. 
  <br/>
-<img src="https://github.com/Jzhang128/ActiveDirectoryLabPT1/blob/main/Screenshots/AD-1.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/spB5MJC.png" height="80%" width="80%" alt="AD1-1"/>
 <br />
 <br />
 2. Press continue and assign at least 2048(2GB) of ram and 2 CPU to the VM. Depending on your system, you can allocate more RAM or CPUs. I do not recommend going below 2 gigs of RAM.  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 3. Continue through the default virtual disk setup and assign 50GB. <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 4. Once the virtual machine is created, go to the settings and navigate to the network tab. The first adapter that is attached to NAT should be there by default. We will add a second adapter by clicking the “Adapter 2” tab and check the box to enable network adapter. In the “attached to:” field, select “internal network”. Press ok.  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4CcV1go.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 5. Double click the VM we labeled as DC and select Server 2019 ISO to install. Press start.   <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 6. After you boot into the installation, you will get to a screen that asks you which operating system you want to install. Choose “Windows Server 2022 Standard Evaluation (Desktop Experience).” This option allows us to have the GUI option instead of a command prompt interface if you were to select an option without the desktop experience.  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/6Yc67rT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 7. Once download is complete, create a password for the built-in administrator account.  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 8. Rename the machine by typing “rename” in the search bar and name it as “DC”. <br/>

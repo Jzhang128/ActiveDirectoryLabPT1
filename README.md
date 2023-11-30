@@ -43,6 +43,7 @@ Input name as “DC” and select “other windows(64-bit)” for version.
 9. Restart the Virtual machine.  <br/>
 <br />
 <br />
+ 
 <h3> Configuring Virtual Network</h3>
 1. Our network will be set up with 2 nics, one dedicated to the internet and another for the internal network. The network for the internet will automatically get an address from your home router. The internal network will be set up manually.
 2. First, click the network icon located on the bottom right of the DC screen. Select “change adapter options” and you should notice 2 connection types.
@@ -52,7 +53,7 @@ Input name as “DC” and select “other windows(64-bit)” for version.
 <br />
 <br /> 
 4. View the IPv4 details and rename the connection with the IPv4 address that starts with 169.254.x.x as “Internal” and rename the other as “Internet”. 
-  <img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/TAcvkMD.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 5. We will manually assign an IPv4 address to the connection labeled as “Internal” by right clicking that connection and selecting “properties”.
@@ -63,25 +64,25 @@ Input name as “DC” and select “other windows(64-bit)” for version.
   Subnet Mask: 255.255.255.0</br>
   Gateway: Leave it empty(our domain controller will serve as default gateway)</br>
   DNS: 127.0.0.1(the computer will use itself as a DNS server)</br>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/9OpvXNs.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 7. Install RAS/NAT to allow other Windows 10 clients to be on the private network and still be able to access the internet through the domain controller. To do this, type “server manager” on the search bar. Click “add roles and feature” and click next.
 <br />
 <br />
 8. Add the role “Remote Access” and choose the “routing” option. Click “next” through each screen and install. 
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/lCpmMpF.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-9. After it finish installing, click “tools” at the top right of the server manager and select “Routing and Remote Access”. 
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+9. After it finishes installing, click “tools” at the top right of the server manager and select “Routing and Remote Access”. 
+<img src="https://i.imgur.com/wklj36V.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 10. Click the domain controller(DC) and right click to select “Configure and Enable Routing and Remote Access”.
 <br />
 <br />
 11. Click next and choose the “NAT” option. On the next screen, ensure the connection label “Internet” and “Internal” is visible under “Use the public interface to connect to the internet”. If the box is empty, cancel and repeat this step.
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LtsLzOU.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 12. Select the connection labeled as “Internet” and click finish. 
@@ -102,27 +103,27 @@ Input name as “DC” and select “other windows(64-bit)” for version.
 <br />
 <br />
 5. Specify the start IP address as 172.16.0.1 and end IP address as 172.16.0.200. Specify the subnet mask as 255.255.255.0 and click next.
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/lxY97eN.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 6. Click the "next" buttin on the next three screens. 
 7. On the Router(default gateway) screen, specify the domain controller as the IP address(172.16.0.1). Click the add button and next.
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/sXI4lRf.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 8. Continue to click "next" and finish setup. 
 
 <h3> Adding Active Directory Feature to Domain Controller</h3>
 1. Type “server manager” on the search bar. Click “add roles and feature” and click “next” through each screen. Then add the feature “Active Directory Domain Services” and install it. 
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2ajVaMq.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 2. After it has been installed, you will notice a yellow flag on the top right of the server manager. Click the flag with the yellow exclamation point triangle, and click “promote this server to a domain controller.” This will allow us to create the domain.
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/GJmzx4C.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 3. Click the “Add a new forest” button and specify a root domain name. I will name mine as “prototype.com” but you can name yours whatever you like.
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DlnGnQp.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 4. Click next and on the Domain Controller Options page, specify a DSRM password. Leave everything as is and click through each screen to install.
@@ -171,7 +172,7 @@ Adapter 1. This will allow the Client 1 VM to receive a DHCP address from the do
 <br />
 <br />
 7. Login to the account and open the command prompt using the search bar. Type the “ipconfig” command to ensure you are assigned a private IP address from the DHCP server and ping google.com to test DNS.
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EAFBOBr.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 8. To join the host to the domain, go to settings and choose the system option. 
@@ -182,7 +183,7 @@ Adapter 1. This will allow the Client 1 VM to receive a DHCP address from the do
 <br />
 <br />
 10. Click the “Change..” button to rename the host to “Client 1” and join the domain by typing the name of the domain that was setup earlier. 
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xaQUzI1.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 11. Click the “Ok” button. You will be prompted with a Window Security popup where you need to enter the Domain Admin account we created earlier in active directory.

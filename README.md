@@ -46,6 +46,8 @@ Input name as “DC” and select “other windows(64-bit)” for version.
  
 <h3> Configuring Virtual Network</h3>
 1. Our network will be set up with 2 nics, one dedicated to the internet and another for the internal network. The network for the internet will automatically get an address from your home router. The internal network will be set up manually.
+<br />
+<br />
 2. First, click the network icon located on the bottom right of the DC screen. Select “change adapter options” and you should notice 2 connection types.
 <br />
 <br />
@@ -106,7 +108,9 @@ Input name as “DC” and select “other windows(64-bit)” for version.
 <img src="https://i.imgur.com/lxY97eN.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-6. Click the "next" buttin on the next three screens. 
+6. Click the "next" button on the next three screens. 
+<br />
+<br />
 7. On the Router(default gateway) screen, specify the domain controller as the IP address(172.16.0.1). Click the add button and next.
 <img src="https://i.imgur.com/sXI4lRf.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />

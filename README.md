@@ -15,6 +15,7 @@ Project consists of a simple PowerShell script that walks the user through "zero
 1. Open Virtualbox and create the server 2019 Virtual machine first by pressing “new”. 
 Input name as “DC” and select “other windows(64-bit)” for version. 
  <br/>
+ ![AD-1 png](https://github.com/Jzhang128/ActiveDirectoryLabPT1/assets/152442402/278a7f3b-9d12-4139-9eb0-44d3f5d7989e)
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />

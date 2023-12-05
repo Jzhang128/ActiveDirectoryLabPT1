@@ -5,8 +5,12 @@ We will create a lab environment utilizing Windows Server 2019 along with Window
 
 <h2>Prerequisite </h2>
 
-- <b>Download Oracle Virtualbox to host virtual machines. You can download Virtualbox here. Ensure you download the correct platform that is compatible with your computer operating system and install the extension pack.  </b>
-- <b>Download Server 2019 here and  Windows 10 OS here and specify the file type as ISO for both. I recommend placing these files on your desktop for easier access for future steps. </b> 
+- <b>Download Oracle Virtualbox to host virtual machines. Ensure you download the correct platform that is compatible with your computer operating system and install the extension pack. </b>
+<br><b>Link:</b> https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html  </br>
+- <b>Download Server 2019 ISO file.</b>
+<br><b>Link:</b> https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019 </br>
+- <b>Download Window 10 OS ISO file.</b>
+ <br><b>Link:</b> https://www.microsoft.com/en-us/software-download/windows10 </br>
 
 <h2>Tutorial:</h2>
 

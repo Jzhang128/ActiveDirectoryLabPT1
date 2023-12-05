@@ -1,13 +1,13 @@
 <h1> Active Directory Lab Part 1: Configure Active Directory Environment</h1>
 
 <h2>Description</h2>
-We will create a lab environment utilizing Windows Server 2019 along with Window 10 VM to emulate a client workstation. Windows Server 2019 will be used as our domain controller, which will allow for authentication and authorization for users that we establish within AD. The overall goal is to get acquainted with Active Directory, understanding what it provides for us and how it works.
+We will create a lab environment utilizing Windows Server 2019 along with Window 10 VM to emulate a client workstation. Windows Server 2019 will be use as our domain controller, which will allow for authentication and authorization for users that we establish within AD. The overall goal is to get acquainted with Active Directory, understanding what it provides for us and how it works.
 
 <h2>Prerequisite </h2>
 
 - <b>Download Oracle Virtualbox to host virtual machines. Ensure you download the correct platform that is compatible with your computer operating system and install the extension pack. </b>
 <br><b>Link:</b> https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html  </br>
-- <b>Download Server 2019 ISO file.</b>
+- <b>Download Window Server 2019 ISO file.</b>
 <br><b>Link:</b> https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019 </br>
 - <b>Download Window 10 OS ISO file.</b>
  <br><b>Link:</b> https://www.microsoft.com/en-us/software-download/windows10 </br>

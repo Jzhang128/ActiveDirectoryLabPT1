@@ -1,11 +1,12 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1> Active Directory Lab Part 1: Configure Active Directory Environment</h1>
 
 <h2>Description</h2>
-This lab consists of the introduction of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system.
+We will create a lab environment utilizing Windows Server 2019 along with Window 10 VM to emulate a client workstation. Windows Server 2019 will be used as our domain controller, which will allow for authentication and authorization for users that we establish within AD. The overall goal is to get acquainted with Active Directory, understanding what it provides for us and how it works.
 
-<h2>Environments Used </h2>
+<h2>Prerequisite </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Download Oracle Virtualbox to host virtual machines. You can download Virtualbox here. Ensure you download the correct platform that is compatible with your computer operating system and install the extension pack.  </b>
+- <b>Download Server 2019 here and  Windows 10 OS here and specify the file type as ISO for both. I recommend placing these files on your desktop for easier access for future steps. </b> 
 
 <h2>Tutorial:</h2>
 
